@@ -47,7 +47,7 @@ var app = {
 		push.on('registration', (data) => {
 			Puship.EnableLog(true);
 			Puship.EnableHtmlLog(true);
-			Puship.Register(data.registrationId,'YOUR-PUSHIP-APP-CODE');
+			Puship.Register(data.registrationId,'9BszdZyLiEw2oNP'); //replace 9BszdZyLiEw2oNP with your puship app code
 		});
 
 		push.on('notification', (data) => {
