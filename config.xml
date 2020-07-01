@@ -10,6 +10,7 @@
     <content src="index.html" />
 	
 	<preference name="phonegap-version" value="cli-8.1.1" />
+	<preference name='pgb-builder-version' value='2' />
 	
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-device" />
