@@ -15,7 +15,7 @@
     <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-geolocation" />
 	<plugin name="phonegap-plugin-push" source="npm" />
-    <plugin name="cordova-plugin-puship" source="npm" />
+    <plugin name="puship-plugin" source="npm" />
 	
     <access origin="*" />
     <allow-intent href="http://*/*" />
