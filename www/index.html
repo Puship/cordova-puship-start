@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com https://cloudapp.puship.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <div id="deviceready" >
+				<h1 class="blink received" style="display:none">Puship is ready!</h1>
+                <p class="listening">listening...</p>
+                <p>This application is only created for puship service demostration.</p>
+                <p>Go to <a href="http://puship.com/?page_id=35" >Puship administration panel</a> for send push notification to this application,</p>
+                <button id="getLastPush" >Get Last Push</button>
+                <button id="getPushByCurrentPosition">Get Last Push by current position</button>
+                <button id="getPushByLibra">Get Last Push by tag Libra</button>
+                <button id="getPushByDevice">Get Last Push by current device</button>
+                <button id="addLibraFilter">Add Libra filter</button>
+                <button id="addVirgoFilter">Add Virgo filter</button>
+                <button id="removeFilter">Remove Libra filter</button>
+                <button id="clearFilters">Clear filters</button>
+                <button id="getFilters">Get filters</button>
+                <button id="registerCurrentPosition">Register position</button>
+                <button id="watchPosition">Activate watch</button>
+                <button id="unregister">Unregister push</button>
+                <button id="sendPushToDevices">Send push to me</button>
+				<div id="logp" style="text-align: left; overflow: scroll"></div>
+            </div>
+        </div>
+		
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
