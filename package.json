@@ -1,7 +1,7 @@
 {
     "name": "com.puship.start",
     "displayName": "cordova-puship-start",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
     "main": "index.js",
     "scripts": {
@@ -12,12 +12,17 @@
     ],
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
-    "dependencies": {
-        "puship-plugin": "^2.0.0"
+    "devDependencies": {
+        "@havesource/cordova-plugin-push": "^3.0.1",
+        "cordova-plugin-device": "^2.1.0",
+        "cordova-plugin-geolocation": "^4.1.0",
+        "cordova-plugin-push": "0.0.1",
+        "puship-plugin": "^2.1.0"
     },
     "cordova": {
         "plugins": {
             "puship-plugin": {}
-        }
+        },
+        "platforms": []
     }
 }
